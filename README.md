@@ -47,16 +47,21 @@ fichas e fotos, com relatórios gerenciais e dashboards.
 
 > Código privado por conter regras de negócio e dados pessoais (LGPD).
 
+➡️ [Ver página do projeto](https://github.com/josecardosodev/gestao-funcionarios)
+
 ---
 
 ## 🛡️ Sistema de Bloqueio para Provas
 
+![Status](https://img.shields.io/badge/status-em%20produção-2ea44f)
+![Escala](https://img.shields.io/badge/700%20máquinas-12%20laboratórios-f87171)
 ![Código](https://img.shields.io/badge/código-privado-lightgrey)
 ![Python](https://img.shields.io/badge/Python-3776AB)
 ![Windows](https://img.shields.io/badge/Windows-0078D6)
 
 Sistema cliente-servidor que garante as condições de prova em laboratórios de
 informática, bloqueando ferramentas de IA e atalhos durante a avaliação.
+É o padrão de **700 computadores em 12 laboratórios**.
 
 - Autenticação cliente-servidor por token
 - Bloqueio contínuo de processos e de sites de IA (arquivo hosts e desativação de DNS-over-HTTPS)
@@ -64,6 +69,8 @@ informática, bloqueando ferramentas de IA e atalhos durante a avaliação.
 - Log de auditoria em JSONL, watchdog e cliente na bandeja do sistema
 
 > Código privado por segurança: publicar o código facilitaria contornar o bloqueio.
+
+➡️ [Ver página do projeto](https://github.com/josecardosodev/zerocola-vitrine)
 
 ---
 
