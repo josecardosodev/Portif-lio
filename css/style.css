@@ -1,0 +1,33 @@
+:root{--bg:#0f1419;--surface:#1a2029;--text:#e6edf3;--muted:#9aa7b3;--accent:#3b9eff;--radius:12px}
+@media (prefers-color-scheme:light){:root:not([data-tema="escuro"]){--bg:#fff;--surface:#f4f6f8;--text:#1a2029;--muted:#4f5b66;--accent:#0b63c5}}
+:root[data-tema="claro"]{--bg:#fff;--surface:#f4f6f8;--text:#1a2029;--muted:#4f5b66;--accent:#0b63c5}
+:root[data-tema="escuro"]{--bg:#0f1419;--surface:#1a2029;--text:#e6edf3;--muted:#9aa7b3;--accent:#3b9eff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:var(--accent)}a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:56px 20px}
+h1{font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.2;margin:.3em 0}
+h2{font-size:1.6rem;margin:0 0 20px}h3{margin:0 0 8px;font-size:1.1rem}
+.top{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--surface);z-index:5}
+.bar{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:700;text-decoration:none;color:var(--text)}
+nav{display:flex;gap:18px;align-items:center}nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--text)}
+.menu-btn,.tema{background:none;border:1px solid var(--surface);color:var(--text);border-radius:8px;padding:4px 10px;cursor:pointer;font-size:1rem}
+.menu-btn{display:none}
+.hero{padding-top:80px;padding-bottom:40px}
+.eyebrow{color:var(--accent);font-weight:600;margin:0}
+.lead{color:var(--muted);max-width:680px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{padding:10px 18px;border-radius:var(--radius);border:1px solid var(--accent);text-decoration:none}
+.btn.primary{background:var(--accent);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--surface);border-radius:var(--radius);padding:20px}
+.card p{margin:0 0 10px}.tags{color:var(--muted);font-size:.9rem}
+.lista{list-style:none;padding:0}.lista li{margin:6px 0}
+.foot{padding:30px 20px;color:var(--muted);border-top:1px solid var(--surface)}
+@media(max-width:860px){.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){
+ .grid{grid-template-columns:1fr}.menu-btn{display:block}
+ nav{display:none;position:absolute;top:60px;left:0;right:0;background:var(--bg);flex-direction:column;padding:16px 20px;border-bottom:1px solid var(--surface);align-items:flex-start}
+ nav.aberto{display:flex}}
